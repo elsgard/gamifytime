@@ -5,7 +5,7 @@ class Ledger:
         self.entries = []
 
 
-    def getHoursForUserAndDay(userId, day):
+    def getHoursForUserAndDay(self, userId, day):
 
         totalHours = 0
 

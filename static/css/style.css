@@ -1,8 +1,67 @@
+/*
+Colors:
+  #36413E
+  #513675
+  #04E824
+  #FFFD82
+  #D2F1E4
+*/
+html
+{
+     width: 800px;
+     margin: 100 auto;
+}
+
 html *
 {
-   font-size: 21pt;
-   color: #000;
-   font-family: 'Press Start 2P';
+  background-color: #513675;
+  font-size: 21pt;
+  color: #D2F1E4;
+  font-family: 'Press Start 2P';
+}
+
+#title
+{
+     width: 600px;
+     margin: 50 auto;
+     color: #04E824;
+}
+
+.ticket *
+{
+  background-color: #D2F1E4;
+  color: #36413E;
+}
+
+.ticket
+{
+  border-radius: 10px;
+  background-color: #D2F1E4;
+  color: #36413E;
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+  height: 150px;
+  font-size: 14pt;
+  font-family: 'Open Sans';
+  border-style: none solid solid none;
+  border-width: 4pt;
+  border-color: #513675;
+}
+
+.ticket:hover
+{
+  border-color: #04E824
+}
+
+.ticket h1
+{
+  font-family: 'Press Start 2P';
+}
+
+.hours
+{
+  text-align: right;
 }
 #wrapper {
     width: 70%;
