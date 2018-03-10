@@ -2,10 +2,11 @@ import json
 
 class Log:
 
-    def __init__(self, id, user_id, hours_logged, description, date):
+    def __init__(self, id, userId, ticketId, hoursLogged, description, date):
         self.id = id
-        self.user_id = user_id
-        self.hours_logged = hours_logged
+        self.userId = user_id
+        self.ticketId = ticketId
+        self.hoursLogged = hoursLogged
         self.description = description
         self.date = date
 

@@ -7,8 +7,8 @@ class LogHandler:
 
     def createLog(data):
         logTuple = jsonToTuple(data)
-        log = Log(self.nextId, logTuple.name,
-                    logTuple.totalPoints, logTuple.spentPoints)
+        log = Log(self.nextId, logTuple.userId,
+                    logTuple.ticketId, logTuple.hoursLogged, logTuple.description, logTuple.date)
         self.logs.append(log)
         self.nextId = self.nextId +1
     def readLog(logId):
@@ -20,9 +20,11 @@ class LogHandler:
         logTuple = jsonToTuple(data)
         for log in logs:
             if log.id == logTuple.id:
-                log.name = logTuple.name
-                log.totalPoints = logTuple.totalPoints
-                log.spentPoints
+                log.userId = logTuple.userId
+                log.ticketId = logTuple.ticketId
+                log.hoursLogged = logTuple.hoursLogged
+                log.description = logTuple.description
+                log.date = logTuple.date
                 return 1
         return None
     def deleteLog(logId):
