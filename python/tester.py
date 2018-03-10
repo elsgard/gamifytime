@@ -1,11 +1,14 @@
-import ledgerEntry as le
-import ledger
-import pointCalculator
+import logHandler
+import log
 import ticket
+import ticketHandler
 import user
+import userHandler
+
+import pointCalculator
+
 import json
 from collections import namedtuple
-import userHandler
 
 data = '{"name": "John Smith", "id": 1, "totalPoints": 0, "spentPoints":0}'
 

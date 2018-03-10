@@ -1,6 +1,6 @@
 import json
 
-class LedgerEntry:
+class Log:
 
     def __init__(self, id, user_id, hours_logged, description, date):
         self.id = id
