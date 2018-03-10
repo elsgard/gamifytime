@@ -8,7 +8,7 @@ class TicketHandler:
     def createTicket(data):
         ticketTuple = jsonToTuple(data)
         ticket = Ticket(self.nextId, ticketTuple.name,
-                    ticketTuple.totalPoints, ticketTuple.spentPoints)
+                    ticketTuple.estimatedHours)
         self.tickets.append(ticket)
         self.nextId = self.nextId +1
     def readticket(ticketId):
@@ -21,8 +21,8 @@ class TicketHandler:
         for ticket in tickets:
             if ticket.id == ticketTuple.id:
                 ticket.name = ticketTuple.name
-                ticket.totalPoints = ticketTuple.totalPoints
-                ticket.spentPoints
+                ticket.estimatedHours = ticketTuple.estimatedHours
+                ticket.spentHours = ticketTuple.spentHours
                 return 1
         return None
     def deleteticket(ticketId):

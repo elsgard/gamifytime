@@ -6,8 +6,8 @@ class Ticket:
         self.id = id
         self.name = name
         self.description = description
-        self.totalHours = totalHours
-        self.remainingHours = totalHours
+        self.estimatedHours = estimatedHours
+        self.spentHours = 0
 
     def toJSON(self):
         return json.dumps(self.__dict__)
