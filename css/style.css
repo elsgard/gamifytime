@@ -8,7 +8,7 @@ Colors:
 */
 html
 {
-     width: 800px;
+     width: 50%;
      margin: 100 auto;
 }
 
@@ -22,7 +22,7 @@ html *
 
 #title
 {
-     width: 600px;
+     width: 500px;
      margin: 50 auto;
      color: #04E824;
 }
@@ -42,16 +42,26 @@ html *
   padding: 10px;
   width: auto;
   height: 150px;
-  font-size: 14pt;
-  font-family: 'Open Sans';
   border-style: none solid solid none;
   border-width: 4pt;
   border-color: #513675;
 }
 
+.description
+{
+  font-size: 14pt;
+  font-family: 'Open Sans';
+}
+
+.id
+{
+  font-size: 14pt;
+  font-family: 'Open Sans';
+}
+
 .ticket:hover
 {
-  border-color: #04E824
+  border-color: #04E824;
 }
 
 .ticket h1
@@ -62,4 +72,19 @@ html *
 .hours
 {
   text-align: right;
+}
+
+input
+{
+    border: none;
+    display: inline;
+    padding: none;
+    text-align: right;
+}
+
+.table_column
+{
+  background-color: #FFFD82;
+  padding: 15px;
+  border-radius: 6px;
 }
